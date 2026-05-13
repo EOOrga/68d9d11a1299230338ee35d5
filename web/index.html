@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#061824">
+  <meta name="description" content="LAFORET SYLVIE FRANCOISE is a local operations app for maintenance, bookings, tasks, and inventory tracking.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.png">
+  <title>LAFORET SYLVIE FRANCOISE</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #061824;
+      --teal: #0f6973;
+      --deep: #0a3b45;
+      --gold: #b8872e;
+      --paper: #f4f7f6;
+      --line: rgba(6, 24, 36, 0.12);
+      --muted: rgba(6, 24, 36, 0.68);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(244, 247, 246, 0.94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+    nav {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+    }
+    .brand img {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      font-size: 0.94rem;
+    }
+    a { color: inherit; text-decoration: none; }
+    .hero {
+      min-height: 76vh;
+      display: grid;
+      align-items: end;
+      background:
+        linear-gradient(90deg, rgba(6, 24, 36, 0.92), rgba(6, 24, 36, 0.58), rgba(6, 24, 36, 0.18)),
+        url("icons/featured.png") center / cover;
+      color: white;
+    }
+    .hero-inner {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      padding: 96px 20px 56px;
+    }
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(2.4rem, 6vw, 5.3rem);
+      line-height: 0.95;
+      font-weight: 900;
+    }
+    .hero p {
+      max-width: 620px;
+      margin: 22px 0 0;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 1.08rem;
+    }
+    .actions {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 8px;
+      font-weight: 800;
+      background: var(--gold);
+      color: var(--ink);
+    }
+    .button.secondary {
+      background: rgba(255, 255, 255, 0.12);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+    }
+    section {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 54px 20px;
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      line-height: 1.05;
+    }
+    .lead {
+      margin: 0;
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+    .grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .item {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .item b {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--deep);
+    }
+    .item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+    .workflow {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: center;
+    }
+    .panel {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .row:last-child { border-bottom: 0; }
+    .pill {
+      white-space: nowrap;
+      color: var(--deep);
+      background: rgba(15, 105, 115, 0.12);
+      padding: 4px 8px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+    footer {
+      background: var(--ink);
+      color: white;
+      padding: 28px 20px;
+    }
+    footer div {
+      max-width: 1120px;
+      margin: 0 auto;
+      color: rgba(255, 255, 255, 0.76);
+    }
+    @media (max-width: 760px) {
+      .nav-links { display: none; }
+      .hero { min-height: 72vh; }
+      .grid, .workflow { grid-template-columns: 1fr; }
+      section { padding: 40px 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Primary">
+      <a class="brand" href="#">
+        <img src="favicon.png" alt="">
+        <span>LAFORET SYLVIE FRANCOISE</span>
+      </a>
+      <div class="nav-links">
+        <a href="#scope">Scope</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#privacy">Privacy</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="hero">
+      <div class="hero-inner">
+        <h1>LAFORET SYLVIE FRANCOISE</h1>
+        <p>Operations management for maintenance requests, facility bookings, tasks, and inventory records in a focused Android workspace.</p>
+        <div class="actions">
+          <a class="button" href="#scope">View app scope</a>
+          <a class="button secondary" href="mailto:support@laforetsylviefrancoise.fr">Contact support</a>
+        </div>
+      </div>
+    </div>
+    <section id="scope">
+      <h2>Daily facility work, organized locally</h2>
+      <p class="lead">The app gives teams one place to create requests, assign owners, schedule shared spaces, and watch stock levels without account setup or cloud services.</p>
+      <div class="grid">
+        <div class="item"><b>Maintenance</b><p>Log requests with locations, notes, owners, and status updates.</p></div>
+        <div class="item"><b>Bookings</b><p>Track room reservations, setup needs, and scheduled times.</p></div>
+        <div class="item"><b>Tasks</b><p>Keep recurring operational actions visible from a work board.</p></div>
+        <div class="item"><b>Inventory</b><p>Monitor item quantities and reorder thresholds from the stock view.</p></div>
+      </div>
+    </section>
+    <section id="workflow" class="workflow">
+      <div>
+        <h2>Built for repeated operations checks</h2>
+        <p class="lead">Dashboard summaries highlight open work, bookings, and low-stock items. Detail views keep notes and next status actions close to the work itself.</p>
+      </div>
+      <div class="panel" aria-label="Operations examples">
+        <div class="row"><span>Repair corridor access reader</span><span class="pill">In progress</span></div>
+        <div class="row"><span>Boardroom booking for vendor visit</span><span class="pill">Scheduled</span></div>
+        <div class="row"><span>HVAC filters</span><span class="pill">Low stock</span></div>
+      </div>
+    </section>
+    <section id="privacy">
+      <h2>No accounts, no tracking, no APIs</h2>
+      <p class="lead">Records and preferences are stored on the device using local app storage. The Android app does not request permissions, collect analytics, use advertising identifiers, or connect to a server.</p>
+    </section>
+  </main>
+  <footer>
+    <div>LAFORET SYLVIE FRANCOISE - support@laforetsylviefrancoise.fr</div>
+  </footer>
+</body>
+</html>

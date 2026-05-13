@@ -1,0 +1,31 @@
+Privacy Policy for LAFORET SYLVIE FRANCOISE
+
+Effective date: May 13, 2026
+
+LAFORET SYLVIE FRANCOISE is provided by LAFORET SYLVIE FRANCOISE. This policy explains how the Android app handles information.
+
+Information handled by the app
+The app lets you enter maintenance requests, facility bookings, tasks, inventory records, workspace names, and coordinator preferences during an active app session. This information is handled inside the app on your device and is not uploaded to a server.
+
+No account or cloud sync
+LAFORET SYLVIE FRANCOISE does not require account registration. It does not upload operations records to a server, provide cloud sync, or sell personal information.
+
+Data collection
+The app does not collect analytics, advertising identifiers, precise location, contacts, photos, microphone input, payment information, or health data.
+
+Data sharing
+The app does not share your operations records or preferences with LAFORET SYLVIE FRANCOISE or third parties.
+
+Data retention and deletion
+Your records remain on your device until you delete the app data or uninstall the app. Removing the app from your device removes locally stored app records according to Android system behavior.
+
+Children
+The app is a general productivity tool and is not directed to children under 13.
+
+Security
+Because operations records are handled on the device during use, protect your device with the security features available on Android.
+
+Contact
+For privacy questions or support, contact:
+LAFORET SYLVIE FRANCOISE
+support@laforetsylviefrancoise.fr
