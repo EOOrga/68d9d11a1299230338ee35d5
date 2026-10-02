@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "applications": {
+    "fr.laforetsylviefrancoise.ops": {
+      "title": "LAFORET SYLVIE FRANCOISE",
+      "short_description": "Manage maintenance, bookings, tasks, and stock from one local operations board.",
+      "full_description": "LAFORET SYLVIE FRANCOISE helps business teams organize daily facility work without accounts or cloud setup. Staff can track maintenance requests, assign task owners, schedule rooms, and monitor inventory levels from a focused Android workspace.\n\nRecords are handled on the device during the active app session, giving teams a practical operations board for the facility they manage. Dashboard summaries, status updates, detail views, and local settings keep the workflow clear during repeated daily use.",
+      "source_screenshots": [
+        "docs/screens/1.png",
+        "docs/screens/2.png",
+        "docs/screens/3.png"
+      ],
+      "generated_from": "existing repository listing metadata and README",
+      "generated_at": "2026-10-02T21:26:33.035160+00:00"
+    }
+  }
+}
