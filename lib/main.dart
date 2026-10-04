@@ -216,7 +216,7 @@ class _OperationsHomeState extends State<OperationsHome> {
         onOpen: _openRecord,
       ),
       RecordsListPage(
-        title: 'Work board',
+        title: 'LAFORET SYLVIE FRANCOISE',
         emptyText: 'No maintenance requests or tasks yet.',
         records: _records
             .where((record) => record.type.isWorkItem)
