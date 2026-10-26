@@ -1,0 +1,3 @@
+LAFORET SYLVIE FRANCOISE helps business teams organize daily facility work without accounts or cloud setup. Staff can track maintenance requests, assign task owners, schedule rooms, and monitor inventory levels from a focused Android workspace.
+
+Records are handled on the device during the active app session, giving teams a practical operations board for the facility they manage. Dashboard summaries, status updates, detail views, and local settings keep the workflow clear during repeated daily use.
