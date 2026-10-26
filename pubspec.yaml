@@ -1,4 +1,4 @@
-name: laforet_sylvie_francoise
+name: pickford
 description: Local operations management for maintenance, bookings, tasks, and stock.
 publish_to: 'none'
 version: 1.0.0+1
@@ -26,6 +26,6 @@ flutter_launcher_icons:
   android: true
   ios: false
   image_path: docs/icon.png
-  adaptive_icon_background: "#061824"
+  adaptive_icon_background: "#FF1F80"
   adaptive_icon_foreground: docs/icon.png
   min_sdk_android: 23
